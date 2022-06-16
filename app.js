@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 app.set('view engine','ejs')
 app.use('/BusMap', Position);
-
-app.get('/BusMap', function (req,res) {
-    res.sendFile(__dirname + '/public/main.html');
-})
+//
+// app.get('/BusMap', function (req,res) {
+//     res.sendFile(__dirname + '/public/main.html');
+// })
