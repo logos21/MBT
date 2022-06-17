@@ -87,7 +87,7 @@ const polyline = new kakao.maps.Polyline({
 const markerBusImage = new kakao.maps.MarkerImage(busimageSrc, busimageSize); //**이미지 옵션 지워둠
 const busmaker = new kakao.maps.Marker({
     map: map,
-    position: new kakao.maps.LatLng(36.768822, 126.929310),
+    position: new kakao.maps.LatLng(<%= n >, <%= w >),
     image: markerBusImage // 마커이미지 설정
 });
 busmaker.setMap(map);
