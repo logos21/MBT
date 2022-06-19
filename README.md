@@ -7,9 +7,9 @@
 
 ### 기술 스택
 
-* **`Html` + `CSS` + `Javascript`**
-* **`Node.js` + `Express`**
-* **`Kakao Map Api`** 
+* `Html` + `CSS` + `Javascript`
+* `Node.js` + `Express`
+* `Kakao Map Api`
 [kakao Map Api](https://apis.map.kakao.com/web/)
 
 ### 제약
