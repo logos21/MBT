@@ -1,45 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
+
 <head>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bar.css">
-    <script>
-        function ViewLayer(){
-            if(document.getElementById("Pop").style.display=="none"){
-                document.getElementById("Pop").style.display='inline'
-            }else{
-                document.getElementById("Pop").style.display='none'
-            }
-        }
-    </script>
-    <meta charset="utf-8">
-    <title>Mobile Bus Tracking</title>
+    <link rel="stylesheet" href="../css/bar.css">
+    <script src="https://kit.fontawesome.com/kit_code.js" crossorigin="anonymous"></script>
+
+    <title>SCH MBT SERVICE</title>
+
 </head>
+
 <body>
 <nav class="navbar">
     <div class="navbar__logo">
         <i class="fas fa-blog"></i>
-        <Div id="Pop" style="position:absolute; left:40px; top:50px; width:100px; height:100px; z-index:1;display:none;"><img src ="images/BusSchedule.JPG" onClick="window.close()"></Div>
         <a href=""><b>SCH MBT SERVICE</b></a>
     </div>
 
     <ul class="navbar__menu">
-        <li><a href="javascript:ViewLayer();"><b>학내순환 시간표</b></a></li>
-        <li ><a href="#"></a><b>신창역행 시간표</b></li>
+        <li class="btn-open-popup">
+            <a href="#"</a><b>학내순환 시간표</b>
+        </li>
+        <li><a href="#" ></a><b>신창역행 시간표</b></li>
+        <li><a href="#" onClick="window.location.reload()"><b>새로고침</b></button></li>
     </ul>
+
+    <div class="modal">
+        <img class="modal_body" src="BusSchedule.JPG" id="shcedule01"></div>
+    </div>
+
+    <script>
+        const modal=document.querySelector('.modal');
+        const btnOpenPopup=document.querySelector('.btn-open-popup');
+
+        btnOpenPopup.addEventListener('click',() => {
+            modal.style.display = 'block';
+            document.getElementById("schedule01");
+        })
+    </script>
 
     <a href="#" class="navbar__toggleBtn">
         <i class="fas fa-hamburger"></i>
     </a>
 </nav>
-<div id="map" style="width:100%;height:1300px;"></div>
-<p id="aa"></p>
-
-
+<div id="map" style="width:100%;height:800px;"></div>
 <script type="text/javascript" src="https://unpkg.com/axios@0.26.0/dist/axios.min.js"></script>
 <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=f5e61ca14f42049fd0d469256eaefe42&libraries=drawing"></script>
 <script type="text/javascript" src="../util.js"></script>

@@ -16,7 +16,7 @@ axios.get('/BusMap/RetPosition')
 
         const map = new kakao.maps.Map(mapContainer, mapOption);
 
-        const imageSrc = 'https://cdn-icons.flaticon.com/png/512/2684/premium/2684188.png?token=exp=1655370168~hmac=d0dda2a1a086797003107999fe4ce567', // 마커이미지의 주소입니다
+        const imageSrc = '../images/bus_station.png', // 마커이미지의 주소입니다
             imageSize = new kakao.maps.Size(64, 69), // 마커이미지의 크기입니다
             imageOption = {offset: new kakao.maps.Point(27, 69)}; // 마커이미지의 옵션입니다. 마커의 좌표와 일치시킬 이미지 안에서의 좌표를 설정합니다.
 
@@ -84,11 +84,10 @@ axios.get('/BusMap/RetPosition')
             strokeOpacity: 0.6,
             strokeStyle: 'soild'
         });
-        alert(res.data[0].N[2]);
 
         for (let i = 0; i < busimages.length; i++) {
             // const markerBusImage = new kakao.maps.MarkerImage(busimages[i].busimageSrc,busimages[i].busimageSize);
-            const markerBusImage = new kakao.maps.MarkerImage('https://cdn-icons-png.flaticon.com/512/2125/2125837.png',new kakao.maps.Size(54, 59));
+            const markerBusImage = new kakao.maps.MarkerImage('https://cdn-icons-png.flaticon.com/512/2125/2125837.png', new kakao.maps.Size(54, 59));
             const busmaker = new kakao.maps.Marker({
                 map: map,
                 position: new kakao.maps.LatLng(res.data[0].N[i], res.data[0].W[i]),
