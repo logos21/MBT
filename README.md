@@ -20,4 +20,6 @@
 
 ## 시연
 
-<img src="./public/images/example.png">
+[MBT Service](http://141.164.40.104:3000/BusMap)
+
+<img src="./public/images/example.png" width="700" height="370">
