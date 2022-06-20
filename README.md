@@ -22,4 +22,4 @@
 
 [MBT Service](http://141.164.40.104:3000/BusMap)
 
-<img src="./public/images/example.png" width="1000" height="400">
+<img src="./public/images/example.png">
