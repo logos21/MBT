@@ -34,7 +34,7 @@ a {
 }
 
 
-.modal {
+.modal {    /* 시간표 팝업창 */
     position: absolute;
     top: 0;
     left: 0;
