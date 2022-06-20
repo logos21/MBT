@@ -24,4 +24,4 @@
 
 <img src="./public/images/example.png">
 
-##### 버스 위치 정보를 버스의 GPS 대신 ./generator-radom-bus-position/bus-position.py 의 스크립트를 이용해 <br/> 임의의 버스 위치 정보를 수신 받는다.<br/> 시연에서는 임의로 받은 위치를 지도상에서 나타낸다. 위치 정보는 5초마다 갱신된다.
+버스 위치 정보를 버스의 GPS 대신 ./generator-radom-bus-position/bus-position.py 의 스크립트를 이용해 <br/> 임의의 버스 위치 정보를 수신 받는다.<br/> 시연에서는 임의로 받은 위치를 지도상에서 나타낸다. 위치 정보는 5초마다 갱신된다.
